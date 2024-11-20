@@ -32,9 +32,9 @@ import org.opencv.core.Mat;
 
 import com.ctre.phoenix6.hardware.Pigeon2;
 import com.ctre.phoenix6.signals.NeutralModeValue;
-import com.pathplanner.lib.util.HolonomicPathFollowerConfig;
-import com.pathplanner.lib.util.PIDConstants;
-import com.pathplanner.lib.util.ReplanningConfig;
+// import com.pathplanner.lib.util.HolonomicPathFollowerConfig;
+// import com.pathplanner.lib.util.PIDConstants;
+// import com.pathplanner.lib.util.ReplanningConfig;
 
 import frc.util.COTSFalconSwerveConstants;
 import frc.util.SwerveModuleConstants;
@@ -424,13 +424,13 @@ public final class Constants {
     public static final double driveRadius = 0.413091;
     public static final double wheelCircumference = chosenModule.wheelCircumference;
 
-    public static final ReplanningConfig kReplanningConfig = new ReplanningConfig();
-    public static final HolonomicPathFollowerConfig kPathFollowingConfig = new HolonomicPathFollowerConfig(// HolonomicPathFollowerConfig, this should likely live in your Constants class
-                        new PIDConstants(2, 0.0, 0), // Translation PID constants
-                        new PIDConstants(2, 0, 0), // Rotation PID constants
-                        6, // Max module speed, in m/s
-                        driveRadius, // Drive base radius in meters. Distance from robot center to furthest module.
-                        new ReplanningConfig());
+    // public static final ReplanningConfig kReplanningConfig = new ReplanningConfig();
+    // public static final HolonomicPathFollowerConfig kPathFollowingConfig = new HolonomicPathFollowerConfig(// HolonomicPathFollowerConfig, this should likely live in your Constants class
+    //                     new PIDConstants(2, 0.0, 0), // Translation PID constants
+    //                     new PIDConstants(2, 0, 0), // Rotation PID constants
+    //                     6, // Max module speed, in m/s
+    //                     driveRadius, // Drive base radius in meters. Distance from robot center to furthest module.
+    //                     new ReplanningConfig());
 
     /*
      * Swerve Kinematics
